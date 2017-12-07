@@ -50,7 +50,7 @@
           while($row = $genres->fetch_object()){
             $name = $row->genre;
         ?>
-        <a href= <?php echo "?page=$name"; ?>><?php echo "$name"; ?></a>
+        <a href= <?php echo "http://localhost/films/index.php?page=$name"; ?>><?php echo "$name"; ?></a>
         <?php 
           }
          ?>

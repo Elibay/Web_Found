@@ -15,7 +15,7 @@
 	$genre = $row->genre;
 	$year = $row->year;
 	$url = $row->url;
-
+	$description = $row->description;
 ?>
 
 <!DOCTYPE html>
@@ -32,24 +32,30 @@
 
 	<?php include('fronter.php') ?>
 	<div class="name">
-		<p>
+		<p> 
 			<?php echo $title; ?>
+
 		</p>
 	</div>
 	<div class="description"> 
 		<img src="<?php echo $url; ?>">
 		<div class="components">
-			<p> 
-				Country: <?php echo $country; ?>
+			<p>
+				Country: <b> <?php echo $country; ?> </b>
 			</p>		
 
 			<p> 
-				Genre: <?php echo $genre; ?>
+				Genre: <b> <?php echo $genre; ?> </b>
 			</p>		
 			
 			<p>
-				Year: <?php echo $year; ?>
+				Year: <b> <?php echo $year; ?> </b>
 			</p>
+
+			<p>
+				Description: <br> <?php echo $description; ?>
+			</p>
+			
 		</div>
 
 	</div>
